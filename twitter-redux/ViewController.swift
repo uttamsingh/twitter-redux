@@ -12,6 +12,7 @@ class ViewController: UIViewController, SideBarDelegate {
 
     var sideBar: SideBar = SideBar()
     
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,13 @@ class ViewController: UIViewController, SideBarDelegate {
     }
     
     func sideBarDidSelectButtonAtIndex(index: Int) {
-        
+        if index == 0 {
+            imageView.backgroundColor = UIColor.green
+            imageView.image = nil
+        } else {
+            imageView.backgroundColor = UIColor.red
+            imageView.image = nil
+        }
         
     }
 

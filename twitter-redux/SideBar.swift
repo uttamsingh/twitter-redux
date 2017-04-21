@@ -22,7 +22,7 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
     let sideBarTableViewTopInsert:CGFloat = 64.0
     let sideBarContainerView:UIView = UIView()
     let sideBarTableViewController:SideBarTableViewController = SideBarTableViewController ()
-    var originView:UIView?
+    var originView:UIView!
     
     var animator:UIDynamicAnimator!
     var delegate:SideBarDelegate?
@@ -39,17 +39,13 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
         
         setupSideBar()
         
-        animator = UIDynamicAnimator(referenceView: originView!)
+        animator = UIDynamicAnimator(referenceView: originView)
         
-        let showGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector(("handleSwipe:")))
-        showGestureRecognizer.direction = UISwipeGestureRecognizerDirection.right
-        originView?.addGestureRecognizer(showGestureRecognizer)
+        let showGestureRecognizer: UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(SideBar.handleSwipe(_:)))
+        originView.addGestureRecognizer(showGestureRecognizer)
         
-        let hideGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector(("handleSwipe:")))
-        hideGestureRecognizer.direction = UISwipeGestureRecognizerDirection.left
-        originView?.addGestureRecognizer(hideGestureRecognizer)
-        
-        
+//        let hideGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(SideBar.handleSwipe(_:)))
+//        originView.addGestureRecognizer(hideGestureRecognizer)
     }
     
     
@@ -77,15 +73,32 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
         sideBarContainerView.addSubview(sideBarTableViewController.tableView)
     }
     
+
     
-    func handleSwipe(recognizer: UISwipeGestureRecognizer) {
-        if recognizer.direction == UISwipeGestureRecognizerDirection.left {
-            showSideBar(shouldOpen: false)
-            delegate?.sideBarWillClose!()
-        } else {
-            showSideBar(shouldOpen: true)
-            delegate?.sideBarWillOpen!()
+    func handleSwipe(_ sender: UIPanGestureRecognizer) {
+        
+        switch sender.state {
+        case .ended:
+            if sender.velocity(in: self.originView).x > 0 {
+                showSideBar(shouldOpen: false)
+                delegate?.sideBarWillClose!()
+            } else {
+                showSideBar(shouldOpen: true)
+                delegate?.sideBarWillOpen!()
+            }
+        default :
+            print("default")
         }
+        
+        
+        
+//        if recognizer.direction == UISwipeGestureRecognizerDirection.left {
+//            showSideBar(shouldOpen: false)
+//            delegate?.sideBarWillClose!()
+//        } else {
+//            showSideBar(shouldOpen: true)
+//            delegate?.sideBarWillOpen!()
+//        }
     }
     
     func showSideBar(shouldOpen: Bool) {
