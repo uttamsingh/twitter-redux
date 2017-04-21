@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1315C3A4A07F5F92A1087BEC /* Pods_twitter_redux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E08DEA7EE387A305D5FD88 /* Pods_twitter_redux.framework */; };
 		9EA9609A1EA7A5CD00CD6F8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA960991EA7A5CD00CD6F8B /* AppDelegate.swift */; };
-		9EA9609C1EA7A5CD00CD6F8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9609B1EA7A5CD00CD6F8B /* ViewController.swift */; };
 		9EA9609F1EA7A5CD00CD6F8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA9609D1EA7A5CD00CD6F8B /* Main.storyboard */; };
 		9EA960A11EA7A5CD00CD6F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA960A01EA7A5CD00CD6F8B /* Assets.xcassets */; };
 		9EA960A41EA7A5CD00CD6F8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA960A21EA7A5CD00CD6F8B /* LaunchScreen.storyboard */; };
+		9EA960AC1EA7B22200CD6F8B /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA960AB1EA7B22200CD6F8B /* SideBarTableViewController.swift */; };
+		9EA960B01EA7BD6800CD6F8B /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA960AF1EA7BD6800CD6F8B /* SideBar.swift */; };
+		9EA960B51EA7DC0300CD6F8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA960B41EA7DC0300CD6F8B /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43E08DEA7EE387A305D5FD88 /* Pods_twitter_redux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_twitter_redux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78353F72AD2D13394803E5BE /* Pods-twitter-redux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitter-redux.release.xcconfig"; path = "Pods/Target Support Files/Pods-twitter-redux/Pods-twitter-redux.release.xcconfig"; sourceTree = "<group>"; };
 		9EA960961EA7A5CD00CD6F8B /* twitter-redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "twitter-redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA960991EA7A5CD00CD6F8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9EA9609B1EA7A5CD00CD6F8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9EA9609E1EA7A5CD00CD6F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EA960A01EA7A5CD00CD6F8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EA960A31EA7A5CD00CD6F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EA960A51EA7A5CD00CD6F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EA960AB1EA7B22200CD6F8B /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
+		9EA960AF1EA7BD6800CD6F8B /* SideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		9EA960B41EA7DC0300CD6F8B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0574459810C86871BC01DC7 /* Pods-twitter-redux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitter-redux.debug.xcconfig"; path = "Pods/Target Support Files/Pods-twitter-redux/Pods-twitter-redux.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1315C3A4A07F5F92A1087BEC /* Pods_twitter_redux.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		533B74509CEEA153B4CF36C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43E08DEA7EE387A305D5FD88 /* Pods_twitter_redux.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9EA9608D1EA7A5CD00CD6F8B = {
 			isa = PBXGroup;
 			children = (
 				9EA960981EA7A5CD00CD6F8B /* twitter-redux */,
 				9EA960971EA7A5CD00CD6F8B /* Products */,
+				E101137734259482906D3342 /* Pods */,
+				533B74509CEEA153B4CF36C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,57 @@
 		9EA960981EA7A5CD00CD6F8B /* twitter-redux */ = {
 			isa = PBXGroup;
 			children = (
+				9EA960B31EA7DBD400CD6F8B /* View Controllers */,
+				9EA960AD1EA7B26A00CD6F8B /* Menu */,
 				9EA960991EA7A5CD00CD6F8B /* AppDelegate.swift */,
-				9EA9609B1EA7A5CD00CD6F8B /* ViewController.swift */,
 				9EA9609D1EA7A5CD00CD6F8B /* Main.storyboard */,
 				9EA960A01EA7A5CD00CD6F8B /* Assets.xcassets */,
 				9EA960A21EA7A5CD00CD6F8B /* LaunchScreen.storyboard */,
 				9EA960A51EA7A5CD00CD6F8B /* Info.plist */,
 			);
 			path = "twitter-redux";
+			sourceTree = "<group>";
+		};
+		9EA960AD1EA7B26A00CD6F8B /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				9EA960B21EA7BD7900CD6F8B /* Controller */,
+				9EA960AE1EA7BD5F00CD6F8B /* Model */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		9EA960AE1EA7BD5F00CD6F8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EA960AF1EA7BD6800CD6F8B /* SideBar.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9EA960B21EA7BD7900CD6F8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EA960AB1EA7B22200CD6F8B /* SideBarTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9EA960B31EA7DBD400CD6F8B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EA960B41EA7DC0300CD6F8B /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E101137734259482906D3342 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0574459810C86871BC01DC7 /* Pods-twitter-redux.debug.xcconfig */,
+				78353F72AD2D13394803E5BE /* Pods-twitter-redux.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EA960A81EA7A5CD00CD6F8B /* Build configuration list for PBXNativeTarget "twitter-redux" */;
 			buildPhases = (
+				11C1C8E208CD30C138E5E6A3 /* [CP] Check Pods Manifest.lock */,
 				9EA960921EA7A5CD00CD6F8B /* Sources */,
 				9EA960931EA7A5CD00CD6F8B /* Frameworks */,
 				9EA960941EA7A5CD00CD6F8B /* Resources */,
+				E7B257C234BFF6A43D75C136 /* [CP] Embed Pods Frameworks */,
+				281521D862D88C5C75BFE15D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +197,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11C1C8E208CD30C138E5E6A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		281521D862D88C5C75BFE15D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twitter-redux/Pods-twitter-redux-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7B257C234BFF6A43D75C136 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twitter-redux/Pods-twitter-redux-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9EA960921EA7A5CD00CD6F8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EA9609C1EA7A5CD00CD6F8B /* ViewController.swift in Sources */,
+				9EA960AC1EA7B22200CD6F8B /* SideBarTableViewController.swift in Sources */,
+				9EA960B01EA7BD6800CD6F8B /* SideBar.swift in Sources */,
+				9EA960B51EA7DC0300CD6F8B /* ViewController.swift in Sources */,
 				9EA9609A1EA7A5CD00CD6F8B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +376,7 @@
 		};
 		9EA960A91EA7A5CD00CD6F8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0574459810C86871BC01DC7 /* Pods-twitter-redux.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3BW25KHFKS;
@@ -274,6 +390,7 @@
 		};
 		9EA960AA1EA7A5CD00CD6F8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78353F72AD2D13394803E5BE /* Pods-twitter-redux.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3BW25KHFKS;
@@ -304,6 +421,7 @@
 				9EA960AA1EA7A5CD00CD6F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
